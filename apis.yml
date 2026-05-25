@@ -1,0 +1,613 @@
+aid: getnet
+url: https://raw.githubusercontent.com/api-evangelist/getnet/refs/heads/main/apis.yml
+name: Getnet
+tags:
+- Payments
+- Acquirer
+- Brazil
+- LATAM
+- Santander
+- E-Commerce
+- In-Store Payments
+- POS
+- Pix
+- Boleto
+- Cards
+- 3DS
+- Tokenization
+- Marketplace
+- Split Payments
+- Payment Link
+- Web Checkout
+- Onboarding
+- Chargeback
+- Webhooks
+- OAuth 2.0
+- Agentic Commerce
+- MCP
+description: >-
+  Getnet is a leading merchant acquirer in Latin America and a payments
+  subsidiary of Banco Santander, operating across Brazil, Argentina, Chile,
+  Colombia, Mexico, Uruguay, Spain, and Portugal. Getnet is positioned as the
+  region's second-largest acquirer by transaction volume and powers card
+  processing, alternative payment methods, gateway, anti-fraud, tokenization,
+  installments, marketplaces, and POS for over a million merchants. Its API
+  ecosystem is now consolidated under the global Getnet Docs portal
+  (docs.globalgetnet.com) with a Single Entry Point (SEP) Regional API
+  alongside Web Checkout, Marketplace, Payment Link, Chargeback, Onboarding,
+  in-store terminal integrations (App2App, Host-to-Host, Integrated POS,
+  Cloud-to-Cloud), and an emerging Agentic Commerce / MCP AI Toolkit surface
+  for AI-driven payments. The Brazilian developer hub at
+  developers.getnet.com.br is being migrated to the unified global portal.
+image: https://site.getnet.com.br/wp-content/themes/getnet/dist/img/logo-getnet.svg
+created: '2026-05-25'
+modified: '2026-05-25'
+position: Consuming
+specificationVersion: '0.18'
+humanURL: https://site.getnet.com.br
+baseURL: https://api.getnet.com.br
+apis:
+- aid: getnet:getnet-regional-api
+  name: Getnet Regional API (Single Entry Point)
+  tags:
+  - Payments
+  - Cards
+  - Pix
+  - Bizum
+  - 3DS
+  - Installments
+  - Recurring
+  - One-Click
+  - LATAM
+  humanURL: https://docs.globalgetnet.com/en/products/online-payments/regional-api
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/online-payments/regional-api
+    type: Documentation
+  - url: https://docs.globalgetnet.com/en/products/online-payments/regional-api/swagger
+    type: APIReference
+  - url: https://docs.globalgetnet.com/en/products/online-payments/regional-api?doc=regional-api-introduction
+    type: GettingStarted
+  - url: https://docs.globalgetnet.com/en/products/online-payments/regional-api?doc=first-step-authentication
+    type: Authentication
+  - url: https://docs.globalgetnet.com/pt/products/online-payments/regional-api?doc=create-3ds-payment
+    type: Documentation
+  description: >-
+    Getnet's core REST API and Single Entry Point (SEP) for direct payment
+    integration across Argentina, Brazil, Chile, Colombia, Mexico, Portugal,
+    Spain, and Uruguay. One contract gives merchants omnichannel payment
+    services across e-commerce and card-present flows, including single-step
+    authorize-and-capture, two-step pre-authorization and capture, 3D Secure
+    authentication, refund, cancel, query, recurring payments, one-click
+    payments, installments (Parcelado Emissor and Parcelado Lojista in
+    Brazil), Pix in Brazil, Bizum in Spain, digital wallets, and a long tail
+    of country-specific alternative payment methods.
+
+- aid: getnet:getnet-web-checkout
+  name: Getnet Web Checkout
+  tags:
+  - Payments
+  - Hosted Checkout
+  - Iframe
+  - Lightbox
+  - Redirect
+  - PCI
+  humanURL: https://docs.globalgetnet.com/en/products/online-payments/web-checkout
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/online-payments/web-checkout
+    type: Documentation
+  - url: https://docs.globalgetnet.com/en/products/online-payments/web-checkout/swagger
+    type: APIReference
+  - url: https://docs.globalgetnet.com/es/products/online-payments/web-checkout-iframe-br-only
+    type: Documentation
+  description: >-
+    Plug-and-play hosted payment surface that reduces PCI scope. Available in
+    three integration modes: embedded iframe, lightbox pop-up, and redirect to
+    a Getnet-hosted page. Supports credit card, debit, Pix, and Boleto in
+    Brazil and cards plus local methods in Argentina, Chile, Mexico, and
+    Uruguay. Designed for sub-30-minute integrations.
+
+- aid: getnet:getnet-marketplace-api
+  name: Getnet Marketplace API
+  tags:
+  - Payments
+  - Marketplace
+  - Split Payments
+  - Sub-Sellers
+  - Settlement
+  humanURL: https://docs.globalgetnet.com/en/products/online-payments/marketplace-api
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/online-payments/marketplace-api
+    type: Documentation
+  - url: https://developers.getnet.com.br/products-docs/i59203rhmt1cann6m5nl73i5/swagger
+    type: APIReference
+  - url: https://developers.getnet.com.br/products-docs/h8ni4tqg5alqlve2cmweyq9a/swagger
+    name: Marketplace Capture API (Transactional)
+    type: APIReference
+  description: >-
+    Payment processing for multi-seller platforms: sub-seller onboarding, card
+    capture (Visa, Mastercard, Elo, Amex, Hipercard), programmable payment
+    splits with commission rules, receivables management, daily CIP settlement
+    file transmission, and transactional management (query, chargebacks,
+    cancellations, adjustments). Includes the dedicated Marketplace Capture
+    API for transactional split flows.
+
+- aid: getnet:getnet-payment-link-api
+  name: Getnet Payment Link API (BR)
+  tags:
+  - Payments
+  - Payment Link
+  - No-Code
+  - Brazil
+  humanURL: https://docs.globalgetnet.com/en/products/online-payments/payment-link-api-br
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/online-payments/payment-link-api-br
+    type: Documentation
+  - url: https://docs.globalgetnet.com/en/products/online-payments/payment-link-api-br/swagger
+    type: APIReference
+  description: >-
+    Programmatically generate shareable payment links so Brazilian merchants
+    can sell without a website or virtual store. Used to distribute checkout
+    via WhatsApp, email, SMS, and social channels, with full transaction
+    lifecycle querying. Brazil-only.
+
+- aid: getnet:getnet-onboarding-api
+  name: Getnet Onboarding API (BR)
+  tags:
+  - Onboarding
+  - Self-Accreditation
+  - Merchant Lifecycle
+  - Brazil
+  humanURL: https://docs.globalgetnet.com/en/products/business-operations/onboarding-api-br
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/business-operations/onboarding-api-br
+    type: Documentation
+  - url: https://developers.getnet.com.br/documentations/onboarding
+    type: Documentation
+  - url: https://api-homologacao.getnet.com.br/api-doc/
+    name: GetTech APIs - Onboarding (homologacao)
+    type: APIReference
+  description: >-
+    100%-online self-accreditation API for new Getnet Brasil merchants.
+    Covers the offer showcase (GET /v1/offerings, pricing, priced offers),
+    establishment registration (POST/PUT /merchants, qualification
+    evaluation), and order management (POST /v1/orders, validation, submit).
+    Token-based Authorization header.
+
+- aid: getnet:getnet-chargeback-api
+  name: Getnet Chargeback API
+  tags:
+  - Chargebacks
+  - Disputes
+  - Risk
+  - OAuth 2.0
+  humanURL: https://docs.globalgetnet.com/en/products/business-operations/chargeback
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/business-operations/chargeback
+    type: Documentation
+  description: >-
+    Dispute management API for listing, viewing, contesting, accepting, and
+    documenting chargebacks. Three actor roles (Merchant, Platform, Auditor)
+    with OAuth 2.0 Bearer tokens, one-hour token TTL, and scope plus
+    merchant-ownership enforcement. Integrated chargebacks currently in
+    Argentina, Chile, and Mexico.
+
+- aid: getnet:getnet-merchant-reporting-api
+  name: Getnet Merchant Reporting API
+  tags:
+  - Reporting
+  - Reconciliation
+  - Settlement
+  - FinOps
+  humanURL: https://docs.globalgetnet.com/en/products/business-operations/global-merchant-reports
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/business-operations/global-merchant-reports
+    type: Documentation
+  description: >-
+    Standardized merchant report retrieval API that simplifies multi-country
+    reconciliation. Surfaces capture, settlement, and adjustment data sets
+    aligned to a unified schema across Getnet markets.
+
+- aid: getnet:getnet-app2app
+  name: Getnet App2App In-Store Integration
+  tags:
+  - In-Store
+  - POS
+  - Mobile
+  - Terminal
+  humanURL: https://docs.globalgetnet.com/en/products/in-store-payments/app2app-integration
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/in-store-payments/app2app-integration
+    type: Documentation
+  description: >-
+    Inter-app integration that lets a merchant's mobile or terminal app hand
+    off a transaction to the Getnet payment app on the same device, then
+    receive the signed result back. Covers the Get Smart and SuperGet POS
+    terminal family.
+
+- aid: getnet:getnet-host-to-host
+  name: Getnet Host-to-Host Terminal Integration
+  tags:
+  - In-Store
+  - Terminal
+  - TEF
+  - POS
+  humanURL: https://docs.globalgetnet.com/en/products/in-store-payments/host-to-host
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/in-store-payments/host-to-host
+    type: Documentation
+  description: >-
+    Direct host-to-host terminal connectivity for back-of-house systems (PDV,
+    ERP, automation gateways) that originate and capture transactions through
+    Getnet terminals without the operator interacting with the POS UI.
+
+- aid: getnet:getnet-integrated-pos
+  name: Getnet Integrated POS
+  tags:
+  - In-Store
+  - POS
+  - Terminal
+  - Automation
+  humanURL: https://docs.globalgetnet.com/en/products/in-store-payments/integrated-pos
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/in-store-payments/integrated-pos
+    type: Documentation
+  description: >-
+    POS-system integration model where the Getnet terminal is driven from a
+    merchant point-of-sale or PDV stack. Includes capture, cancellation,
+    reprint, totals, settlement, and consolidated lifecycle hooks.
+
+- aid: getnet:getnet-cloud-to-cloud
+  name: Getnet Cloud-to-Cloud
+  tags:
+  - In-Store
+  - Cloud
+  - Terminal
+  - Omnichannel
+  humanURL: https://docs.globalgetnet.com/en/products/in-store-payments/cloud-to-cloud
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/in-store-payments/cloud-to-cloud
+    type: Documentation
+  description: >-
+    Cloud-mediated terminal command and event delivery so a remote merchant
+    system can drive a Getnet POS terminal without on-prem middleware.
+    Designed for omnichannel use cases that blend in-store and remote
+    operations.
+
+- aid: getnet:getnet-agentic-commerce
+  name: Getnet Agentic Commerce
+  tags:
+  - Agentic Commerce
+  - AI
+  - Autonomous Agents
+  - Payments
+  humanURL: https://docs.globalgetnet.com/en/products/agentic-commerce/agentic-commerce
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/agentic-commerce/agentic-commerce
+    type: Documentation
+  description: >-
+    Payment surface designed for autonomous AI agents acting as the buying
+    party in a commerce interaction. Provides agent-friendly payment
+    intent, authorization, and capture flows aligned with Getnet's Regional
+    API.
+
+- aid: getnet:getnet-mcp-ai-toolkit
+  name: Getnet MCP AI Toolkit
+  tags:
+  - MCP
+  - AI
+  - ChatGPT
+  - Claude
+  - Gemini
+  - Tools
+  humanURL: https://docs.globalgetnet.com/en/products/agentic-commerce/mcp-ai-toolkit
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/agentic-commerce/mcp-ai-toolkit
+    type: Documentation
+  description: >-
+    Model Context Protocol toolkit that exposes Getnet payment operations to
+    AI assistants such as ChatGPT, Claude, and Gemini, so an LLM-driven agent
+    can quote, charge, refund, and inspect transactions through a curated MCP
+    server.
+
+- aid: getnet:getnet-oauth2-token-api
+  name: Getnet OAuth 2.0 Token API
+  tags:
+  - Authentication
+  - OAuth 2.0
+  - Identity
+  humanURL: https://docs.globalgetnet.com/en/products/sap-immediate-delivery/getnet-oauth2-token-api
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/sap-immediate-delivery/getnet-oauth2-token-api
+    type: Documentation
+  description: >-
+    OAuth 2.0 client-credentials token endpoint used to mint bearer access
+    tokens for Getnet APIs. Tokens are short-lived (one hour for chargeback)
+    and must be refreshed before passing in the Authorization header on
+    subsequent API calls.
+
+- aid: getnet:getnet-idempotency-api
+  name: Getnet Idempotency API
+  tags:
+  - Idempotency
+  - Reliability
+  - Digital Platform
+  humanURL: https://developers.getnet.com.br/products-docs/bopkivddldlkc88xfa9anqcd/swagger
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://developers.getnet.com.br/products-docs/bopkivddldlkc88xfa9anqcd/swagger
+    type: APIReference
+  description: >-
+    Idempotency endpoint set for the legacy Plataforma Digital that lets
+    merchants pre-register and replay request keys so retries do not result
+    in duplicate charges or duplicate split allocations. Being migrated into
+    the global portal.
+
+- aid: getnet:getnet-canais-digitais
+  name: Getnet Canais Digitais API
+  tags:
+  - Digital Channels
+  - Brazil
+  - Plataforma Digital
+  humanURL: https://developers.getnet.com.br/products-docs/vp6zrskhqougabjn7o1axagi/swagger
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://developers.getnet.com.br/products-docs/vp6zrskhqougabjn7o1axagi/swagger
+    type: APIReference
+  description: >-
+    Canais Digitais surface inside the legacy Brazilian Plataforma Digital
+    that powers merchant-facing self-service flows and internal digital
+    channel automations. Being migrated to docs.globalgetnet.com.
+
+- aid: getnet:getnet-sap-immediate-delivery
+  name: Getnet SAP Immediate Delivery APIs
+  tags:
+  - SAP
+  - Logistics
+  - Inventory
+  - Webhooks
+  - Brazil
+  humanURL: https://docs.globalgetnet.com/en/products/sap-immediate-delivery/wl-entrega-imediata
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/sap-immediate-delivery/wl-entrega-imediata
+    name: SAP Inventory Management
+    type: Documentation
+  - url: https://docs.globalgetnet.com/en/products/sap-immediate-delivery/wl-entrega-imediata-closure-os
+    name: SAP Closure O.S.
+    type: Documentation
+  - url: https://docs.globalgetnet.com/en/products/sap-immediate-delivery/wl-entrega-imediata-upload-evidence
+    name: SAP Upload Evidence
+    type: Documentation
+  - url: https://docs.globalgetnet.com/en/products/sap-immediate-delivery/webook-sap
+    name: SAP Webhooks
+    type: AsyncAPI
+  description: >-
+    SAP-integrated white-label APIs covering inventory management, service
+    order closure, evidence upload, and event webhooks for Getnet's
+    immediate-delivery (entrega imediata) terminal logistics flow.
+
+- aid: getnet:getnet-white-label-ops
+  name: Getnet White Label Merchant Operations
+  tags:
+  - Merchant Operations
+  - Fees
+  - Supplies
+  - White Label
+  humanURL: https://docs.globalgetnet.com/en/products/white-label/paper-rolls
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/white-label/paper-rolls
+    name: Paper Rolls
+    type: Documentation
+  - url: https://docs.globalgetnet.com/en/products/white-label/fee-merchant
+    name: Fee Merchant
+    type: Documentation
+  description: >-
+    White-label merchant operations APIs covering terminal paper-roll
+    ordering and merchant fee viewing and negotiation surfaces that
+    partners can embed in their own back-office.
+
+- aid: getnet:getnet-local-processor-spain
+  name: Getnet Get Smart App2App (Spain)
+  tags:
+  - Spain
+  - In-Store
+  - App2App
+  - Terminal
+  - Bizum
+  humanURL: https://docs.globalgetnet.com/en/products/local-processor-spain/get-smart-app2app
+  baseURL: https://api.getnet.com.br
+  properties:
+  - url: https://docs.globalgetnet.com/en/products/local-processor-spain/get-smart-app2app
+    type: Documentation
+  description: >-
+    Spain-specific Get Smart App2App terminal-integration model for the
+    local processor footprint, with Bizum and Spanish card-scheme support.
+
+properties:
+- url: https://site.getnet.com.br
+  type: Portal
+- url: https://www.getnetworld.com
+  name: Getnet Global (Getnet World)
+  type: Portal
+- url: https://developers.getnet.com.br
+  name: Getnet Developers (Brazil, being migrated)
+  type: Portal
+- url: https://docs.globalgetnet.com/en
+  name: Getnet Docs (Global)
+  type: Documentation
+- url: https://developers.getnet.com.br/faq
+  type: FAQ
+- url: https://site.getnet.com.br/duvidas/
+  name: Duvidas e Perguntas Frequentes
+  type: FAQ
+- url: https://site.getnet.com.br/portal-do-cliente/
+  type: CustomerPortal
+- url: https://getstore.getnet.com.br/
+  name: Portal do Desenvolvedor (Get Store)
+  type: Portal
+- url: https://site.getnet.com.br/ecommerce/
+  type: SignUp
+- url: https://site.getnet.com.br/taxas/
+  type: Pricing
+- url: https://www.getnetworld.com/getnet-contact
+  type: Support
+- url: https://api-homologacao.getnet.com.br/api-doc/
+  name: Homologacao (sandbox) API Docs
+  type: Sandbox
+- url: https://github.com/Getnet-Brasil
+  name: Getnet-Brasil GitHub Organization
+  type: GitHubOrganization
+- url: https://github.com/Getnet-Brasil/payment-magento
+  name: Getnet for Magento 2 (Adobe Commerce)
+  type: Plugin
+- url: https://github.com/Getnet-Brasil/split-example-magento
+  name: Getnet Split Example for Magento
+  type: Plugin
+- url: https://github.com/Getnet-Brasil/sub-seller-magento
+  name: Getnet Sub-Seller Magento Module
+  type: Plugin
+- url: https://github.com/Getnet-Brasil/app-test-sdk-android
+  name: Getnet Android SDK Test App
+  type: SDK
+- url: https://github.com/pagonxt
+  name: PagoNxt GitHub Organization (Santander parent)
+  type: GitHubOrganization
+- url: https://play.google.com/store/apps/details?id=br.com.getnet.supergetmobile
+  name: SuperGet Mobile (Android)
+  type: MobileApplication
+- url: https://apps.apple.com/br/app/getnet-brasil/id1461510055
+  name: Getnet Brasil (iOS)
+  type: MobileApplication
+- url: https://www.santander.com/en/press-room/press-releases/2024/10/getnet-by-santander-launches-getnet-sep-a-solution-for-e-commerce-payments-in-brazil-argentina-mexico-and-chile-through-a-single-integration
+  name: Getnet SEP Launch (Santander, 2024)
+  type: PressRelease
+- url: https://www.santander.com/en/press-room/features/latin-america-economic-outlook/getnet-leading-latin-america-digital-payments-revolution
+  type: Article
+- url: https://www.crunchbase.com/organization/getnet
+  type: Crunchbase
+
+- type: Features
+  data:
+  - Single Entry Point (SEP) Regional API across BR, AR, CL, CO, MX, UY, PT, ES
+  - Web Checkout in three modes (iframe, lightbox, redirect)
+  - Marketplace Capture API with programmable split rules and CIP settlement files
+  - Payment Link API for Brazilian no-code commerce
+  - Onboarding API for 100%-online merchant self-accreditation in Brazil
+  - Chargeback API with OAuth 2.0 and merchant / platform / auditor roles
+  - Merchant Reporting API for unified multi-country reconciliation
+  - In-store integrations: App2App, Host-to-Host, Integrated POS, Cloud-to-Cloud
+  - Terminal family: Get Smart, SuperGet, Get Classica, POS Digital
+  - Pix (Brazil), Boleto Bancario, credit, debit, 3DS, tokenization, installments
+  - Bizum support in Spain via local processor
+  - Recurring payments, one-click payments, two-step pre-authorization and capture
+  - SAP-integrated entrega imediata APIs (inventory, closure, evidence, webhooks)
+  - White-label merchant operations (paper rolls, fee merchant) for partners
+  - Agentic Commerce surface plus MCP AI Toolkit for ChatGPT / Claude / Gemini
+  - Plugins for WooCommerce, Magento, VTEX, and Tiendanube / Nubemshop
+  - Open-source Magento 2 module (payment-magento) maintained by Getnet-Brasil
+  - Sandbox / homologacao environment at api-homologacao.getnet.com.br
+  sources:
+  - https://docs.globalgetnet.com/en
+  - https://docs.globalgetnet.com/en/products/online-payments/regional-api
+  - https://docs.globalgetnet.com/en/products/online-payments/web-checkout
+  - https://docs.globalgetnet.com/en/products/online-payments/marketplace-api
+  - https://docs.globalgetnet.com/en/products/online-payments/payment-link-api-br
+  - https://docs.globalgetnet.com/en/products/business-operations/onboarding-api-br
+  - https://docs.globalgetnet.com/en/products/business-operations/chargeback
+  - https://docs.globalgetnet.com/en/products/business-operations/global-merchant-reports
+  - https://docs.globalgetnet.com/en/products/in-store-payments/app2app-integration
+  - https://docs.globalgetnet.com/en/products/agentic-commerce/mcp-ai-toolkit
+  - https://github.com/Getnet-Brasil
+  - https://site.getnet.com.br
+  updated: '2026-05-25'
+
+- type: UseCases
+  data:
+  - Accept Pix, card, and Boleto on a Brazilian e-commerce checkout via Web Checkout iframe
+  - Build a fully customized PCI-compliant card flow with installments using the Regional API
+  - Operate a multi-seller marketplace with automatic commission splits and daily CIP settlement
+  - Sell on WhatsApp / SMS / email by minting Payment Links programmatically
+  - Self-serve new merchants onto Getnet Brasil via the Onboarding API in a single online flow
+  - Manage cross-country card disputes through the unified Chargeback API
+  - Drive Get Smart terminals from a third-party PDV or ERP using Integrated POS or Host-to-Host
+  - Run cloud-orchestrated POS flows with Cloud-to-Cloud for omnichannel pickup
+  - Reconcile multi-country settlement with the Merchant Reporting API
+  - Expose Getnet payments to autonomous AI agents through the Agentic Commerce + MCP toolkit
+  - Embed Getnet payments into Magento 2, WooCommerce, VTEX, or Nubemshop stores
+  - Tokenize cards once and reuse for recurring and one-click transactions
+  - Authenticate high-risk card transactions with 3DS on the Regional API
+  sources:
+  - https://docs.globalgetnet.com/en
+  - https://github.com/Getnet-Brasil/payment-magento
+
+- type: Integrations
+  data:
+  - Banco Santander (parent group; banking, settlement, FX, Pix Santander)
+  - PagoNxt (Santander's payments platform org)
+  - SAP (SAP Immediate Delivery white-label APIs)
+  - Magento 2 / Adobe Commerce (official Getnet-Brasil plugin)
+  - WooCommerce (official plugin via Getnet Docs)
+  - VTEX (official plugin via Getnet Docs)
+  - Tiendanube / Nubemshop (official plugin via Getnet Docs)
+  - Visa, Mastercard, Elo, American Express, Hipercard, Diners (card schemes)
+  - Pix (Banco Central do Brasil instant payment scheme via Santander)
+  - Bizum (Spain instant payments)
+  - CIP (Brazilian interbank settlement, marketplace daily file transmission)
+  - Model Context Protocol (MCP) for AI assistants
+  sources:
+  - https://docs.globalgetnet.com/en
+  - https://github.com/Getnet-Brasil
+  - https://www.santander.com/en/press-room/specials/santander-global-businesses/santanders-global-payments-business
+
+- type: Solutions
+  data:
+  - Online Payments (Regional API, Web Checkout, Marketplace, Payment Link)
+  - In-Store Payments (Get Smart, SuperGet, Get Classica, POS Digital, App2App, Host-to-Host, Integrated POS, Cloud-to-Cloud)
+  - Business Operations (Onboarding, Chargeback, Merchant Reporting)
+  - Agentic Commerce (Agentic Commerce API + MCP AI Toolkit)
+  - Local Processor Spain (Get Smart App2App)
+  - White Label Merchant Ops (Paper Rolls, Fee Merchant)
+  - SAP Immediate Delivery (Inventory, Closure, Upload Evidence, Webhooks)
+  - Get Conta (digital account) and value-added Santander banking services for merchants
+  sources:
+  - https://docs.globalgetnet.com/en
+  - https://site.getnet.com.br
+
+common:
+- url: https://docs.globalgetnet.com/en
+  type: Documentation
+- url: https://docs.globalgetnet.com/en/products/online-payments/regional-api?doc=first-step-authentication
+  type: Authentication
+- url: https://site.getnet.com.br/duvidas/
+  type: FAQ
+- url: https://site.getnet.com.br/taxas/
+  type: Pricing
+- url: https://api-homologacao.getnet.com.br/api-doc/
+  type: Sandbox
+- url: https://github.com/Getnet-Brasil
+  type: GitHubOrganization
+
+maintainers:
+- FN: Kin Lane
+  email: info@apievangelist.com
+  X: '@kinlane'
+  url: https://kinlane.com
+
+include: []
+
+x-type: company

@@ -1,0 +1,111 @@
+aid: getnet
+name: Getnet
+reviewed: '2026-05-25'
+reviewer: Kin Lane
+tier: 2
+type: company
+summary: >-
+  Getnet is a tier-2 Latin American merchant acquirer owned by Banco
+  Santander, with a meaningful and modernizing API surface but
+  fragmented developer experience. The new global Getnet Docs portal
+  (docs.globalgetnet.com) consolidates a Single Entry Point (SEP)
+  Regional API across BR, AR, CL, CO, MX, UY, PT, ES alongside Web
+  Checkout, Marketplace, Payment Link, Onboarding, Chargeback,
+  Merchant Reporting, four in-store integration models (App2App,
+  Host-to-Host, Integrated POS, Cloud-to-Cloud), SAP-integrated
+  white-label APIs, and an unusually forward-leaning Agentic Commerce
+  + MCP AI Toolkit surface. The legacy Brazilian portal at
+  developers.getnet.com.br is still live and being migrated, which
+  leaves merchants navigating two parallel documentation systems. The
+  open-source GitHub presence (Getnet-Brasil) is small but real, led
+  by a maintained Magento 2 module and Android SDK test app.
+
+strengths:
+  - Single Entry Point (SEP) Regional API unifies eight Latin American and European markets behind one contract
+  - Web Checkout offers three integration modes (iframe, lightbox, redirect) for fast PCI-light go-live
+  - Marketplace API with programmable split rules and daily CIP settlement is a real differentiator in Brazil
+  - Payment Link API enables WhatsApp / social-commerce flows for SMB Brazilian merchants
+  - Onboarding API supports 100%-online self-accreditation for new Brazilian merchants
+  - Chargeback API uses OAuth 2.0 with proper role separation (merchant / platform / auditor)
+  - Four distinct in-store integration models cover app, host, POS-driven, and cloud-orchestrated terminals
+  - Backed by Banco Santander, integrated with Pix Santander, Santander banking, and CIP settlement
+  - Plugins for WooCommerce, Magento, VTEX, and Nubemshop covering the major Brazilian e-commerce stacks
+  - Open-source Magento 2 module actively maintained on the Getnet-Brasil GitHub org
+  - Forward-leaning Agentic Commerce and MCP AI Toolkit positioning for AI-driven payments
+  - Public sandbox / homologacao environment with Swagger UI at api-homologacao.getnet.com.br
+  - Sao Paulo + New York dual listing pedigree (Getnet Brasil spin-off, 2021)
+
+gaps:
+  - Documentation fragmented across legacy developers.getnet.com.br and new docs.globalgetnet.com with a long-running migration
+  - No publicly downloadable OpenAPI / Swagger JSON or YAML (Swagger UI only, behind anti-bot protections)
+  - Brazilian developer portal returns HTTP 403 to non-browser clients, breaking automated discovery and import-into-tooling flows
+  - No public, numeric rate-limit schedule; limits are per-merchant and contractual
+  - No public price list outside Brazilian taxas page; international pricing is quote-based
+  - Few official server-side SDKs (no first-party Node, Python, Go, or Ruby SDK in the GitHub org)
+  - Status page is not publicly discoverable from the developer hub
+  - Localization gaps: several global docs sections only render in Portuguese or Spanish
+  - PagoNxt / Getnet World org structure makes provenance of each API surface non-obvious to new integrators
+  - Idempotency API still surfaced in the legacy portal even as the rest of the platform migrates
+
+api_groups:
+  - getnet-regional-api
+  - getnet-web-checkout
+  - getnet-marketplace-api
+  - getnet-payment-link-api
+  - getnet-onboarding-api
+  - getnet-chargeback-api
+  - getnet-merchant-reporting-api
+  - getnet-app2app
+  - getnet-host-to-host
+  - getnet-integrated-pos
+  - getnet-cloud-to-cloud
+  - getnet-agentic-commerce
+  - getnet-mcp-ai-toolkit
+  - getnet-oauth2-token-api
+  - getnet-idempotency-api
+  - getnet-canais-digitais
+  - getnet-sap-immediate-delivery
+  - getnet-white-label-ops
+  - getnet-local-processor-spain
+
+properties_covered:
+  - Portal
+  - Documentation
+  - APIReference
+  - GettingStarted
+  - Authentication
+  - FAQ
+  - Pricing
+  - SignUp
+  - Sandbox
+  - Support
+  - CustomerPortal
+  - GitHubOrganization
+  - Plugin
+  - SDK
+  - MobileApplication
+  - PressRelease
+  - Article
+  - Crunchbase
+  - AsyncAPI
+
+sources:
+  - https://site.getnet.com.br
+  - https://www.getnetworld.com
+  - https://docs.globalgetnet.com/en
+  - https://docs.globalgetnet.com/en/products/online-payments/regional-api
+  - https://docs.globalgetnet.com/en/products/online-payments/web-checkout
+  - https://docs.globalgetnet.com/en/products/online-payments/marketplace-api
+  - https://docs.globalgetnet.com/en/products/online-payments/payment-link-api-br
+  - https://docs.globalgetnet.com/en/products/business-operations/onboarding-api-br
+  - https://docs.globalgetnet.com/en/products/business-operations/chargeback
+  - https://docs.globalgetnet.com/en/products/business-operations/global-merchant-reports
+  - https://docs.globalgetnet.com/en/products/in-store-payments/app2app-integration
+  - https://docs.globalgetnet.com/en/products/agentic-commerce/mcp-ai-toolkit
+  - https://developers.getnet.com.br
+  - https://api-homologacao.getnet.com.br/api-doc/
+  - https://github.com/Getnet-Brasil
+  - https://github.com/pagonxt
+  - https://www.santander.com/en/press-room/press-releases/2024/10/getnet-by-santander-launches-getnet-sep-a-solution-for-e-commerce-payments-in-brazil-argentina-mexico-and-chile-through-a-single-integration
+  - https://www.santander.com/en/press-room/press-releases/2021/10/santanders-leading-merchant-acquirer-getnet-brazil-to-begin-trading-in-sao-paulo-and-new-york-in-october
+  - https://www.crunchbase.com/organization/getnet
