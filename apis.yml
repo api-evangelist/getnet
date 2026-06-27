@@ -461,7 +461,7 @@ properties:
   name: Portal do Desenvolvedor (Get Store)
   type: Portal
 - url: https://site.getnet.com.br/ecommerce/
-  type: SignUp
+  type: Signup
 - url: https://site.getnet.com.br/taxas/
   type: Pricing
 - url: https://www.getnetworld.com/getnet-contact
@@ -483,7 +483,7 @@ properties:
   type: Plugin
 - url: https://github.com/Getnet-Brasil/app-test-sdk-android
   name: Getnet Android SDK Test App
-  type: SDK
+  type: SDKs
 - url: https://github.com/pagonxt
   name: PagoNxt GitHub Organization (Santander parent)
   type: GitHubOrganization
