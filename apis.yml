@@ -589,6 +589,8 @@ properties:
   - https://site.getnet.com.br
 
 common:
+- type: DomainSecurity
+  url: security/getnet-domain-security.yml
 - url: https://docs.globalgetnet.com/en
   type: Documentation
 - url: https://docs.globalgetnet.com/en/products/online-payments/regional-api?doc=first-step-authentication
