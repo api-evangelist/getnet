@@ -39,6 +39,17 @@ description: >-
   Cloud-to-Cloud), and an emerging Agentic Commerce / MCP AI Toolkit surface
   for AI-driven payments. The Brazilian developer hub at
   developers.getnet.com.br is being migrated to the unified global portal.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 image: https://site.getnet.com.br/wp-content/themes/getnet/dist/img/logo-getnet.svg
 created: '2026-05-25'
 modified: '2026-05-25'
