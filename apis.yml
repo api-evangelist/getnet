@@ -54,7 +54,7 @@ image: https://site.getnet.com.br/wp-content/themes/getnet/dist/img/logo-getnet.
 created: '2026-05-25'
 modified: '2026-05-25'
 position: Consuming
-specificationVersion: '0.18'
+specificationVersion: '0.23'
 humanURL: https://site.getnet.com.br
 baseURL: https://api.getnet.com.br
 apis:
