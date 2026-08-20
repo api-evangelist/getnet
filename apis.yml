@@ -5,6 +5,30 @@ tags:
 - Payments
 - Acquirer
 - Brazil
+- LatAm
+- Santander
+- E-Commerce
+- In-Store Payments
+- Point-of-Sale
+- Pix
+- Boleto
+- Cards
+- 3DS
+- Tokenization
+- Marketplace
+- Split Payments
+- Payment Link
+- Web Checkout
+- Onboarding
+- Chargeback
+- Webhook
+- Authentication
+- Agentic Commerce
+- MCP
+tags_raw:
+- Payments
+- Acquirer
+- Brazil
 - LATAM
 - Santander
 - E-Commerce
@@ -61,6 +85,16 @@ apis:
 - aid: getnet:getnet-regional-api
   name: Getnet Regional API (Single Entry Point)
   tags:
+  - Payments
+  - Cards
+  - Pix
+  - Bizum
+  - 3DS
+  - Installments
+  - Recurring
+  - One-Click
+  - LatAm
+  tags_raw:
   - Payments
   - Cards
   - Pix
@@ -195,6 +229,11 @@ apis:
   - Chargebacks
   - Disputes
   - Risk
+  - Authentication
+  tags_raw:
+  - Chargebacks
+  - Disputes
+  - Risk
   - OAuth 2.0
   humanURL: https://docs.globalgetnet.com/en/products/business-operations/chargeback
   baseURL: https://api.getnet.com.br
@@ -229,6 +268,11 @@ apis:
   name: Getnet App2App In-Store Integration
   tags:
   - In-Store
+  - Point-of-Sale
+  - Mobile
+  - Terminal
+  tags_raw:
+  - In-Store
   - POS
   - Mobile
   - Terminal
@@ -249,6 +293,11 @@ apis:
   - In-Store
   - Terminal
   - TEF
+  - Point-of-Sale
+  tags_raw:
+  - In-Store
+  - Terminal
+  - TEF
   - POS
   humanURL: https://docs.globalgetnet.com/en/products/in-store-payments/host-to-host
   baseURL: https://api.getnet.com.br
@@ -263,6 +312,11 @@ apis:
 - aid: getnet:getnet-integrated-pos
   name: Getnet Integrated POS
   tags:
+  - In-Store
+  - Point-of-Sale
+  - Terminal
+  - Automation
+  tags_raw:
   - In-Store
   - POS
   - Terminal
@@ -299,6 +353,11 @@ apis:
   name: Getnet Agentic Commerce
   tags:
   - Agentic Commerce
+  - Artificial Intelligence
+  - Autonomous Agents
+  - Payments
+  tags_raw:
+  - Agentic Commerce
   - AI
   - Autonomous Agents
   - Payments
@@ -316,6 +375,13 @@ apis:
 - aid: getnet:getnet-mcp-ai-toolkit
   name: Getnet MCP AI Toolkit
   tags:
+  - MCP
+  - Artificial Intelligence
+  - ChatGPT
+  - Claude
+  - Gemini
+  - Tools
+  tags_raw:
   - MCP
   - AI
   - ChatGPT
@@ -336,6 +402,9 @@ apis:
 - aid: getnet:getnet-oauth2-token-api
   name: Getnet OAuth 2.0 Token API
   tags:
+  - Authentication
+  - Identity
+  tags_raw:
   - Authentication
   - OAuth 2.0
   - Identity
@@ -386,6 +455,12 @@ apis:
 - aid: getnet:getnet-sap-immediate-delivery
   name: Getnet SAP Immediate Delivery APIs
   tags:
+  - SAP
+  - Logistics
+  - Inventory
+  - Webhook
+  - Brazil
+  tags_raw:
   - SAP
   - Logistics
   - Inventory
