@@ -5,11 +5,11 @@ tags:
 - Payments
 - Acquirer
 - Brazil
-- LatAm
+- LATAM
 - Santander
 - E-Commerce
 - In-Store Payments
-- Point-of-Sale
+- POS
 - Pix
 - Boleto
 - Cards
@@ -104,7 +104,7 @@ apis:
   - Installments
   - Recurring
   - One-Click
-  - LatAm
+  - LATAM
   tags_raw:
   - Payments
   - Cards
@@ -279,7 +279,7 @@ apis:
   name: Getnet App2App In-Store Integration
   tags:
   - In-Store
-  - Point-of-Sale
+  - POS
   - Mobile
   - Terminal
   tags_raw:
@@ -304,7 +304,7 @@ apis:
   - In-Store
   - Terminal
   - TEF
-  - Point-of-Sale
+  - POS
   tags_raw:
   - In-Store
   - Terminal
@@ -324,7 +324,7 @@ apis:
   name: Getnet Integrated POS
   tags:
   - In-Store
-  - Point-of-Sale
+  - POS
   - Terminal
   - Automation
   tags_raw:
