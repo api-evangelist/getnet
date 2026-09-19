@@ -5,7 +5,7 @@ tags:
 - Payments
 - Acquirer
 - Brazil
-- LatAm
+- Latin America
 - Santander
 - E-Commerce
 - In-Store Payments
@@ -13,14 +13,14 @@ tags:
 - Pix
 - Boleto
 - Cards
-- 3DS
+- 3D
 - Tokenization
 - Marketplace
 - Split Payments
-- Payment Link
+- Payment Links
 - Web Checkout
 - Onboarding
-- Chargeback
+- Chargebacks
 - Webhook
 - Authentication
 - Agentic Commerce
@@ -100,11 +100,11 @@ apis:
   - Cards
   - Pix
   - Bizum
-  - 3DS
+  - 3D
   - Installments
   - Recurring
   - One-Click
-  - LatAm
+  - Latin America
   tags_raw:
   - Payments
   - Cards
@@ -193,6 +193,11 @@ apis:
 - aid: getnet:getnet-payment-link-api
   name: Getnet Payment Link API (BR)
   tags:
+  - Payments
+  - Payment Links
+  - No-Code
+  - Brazil
+  tags_raw:
   - Payments
   - Payment Link
   - No-Code
