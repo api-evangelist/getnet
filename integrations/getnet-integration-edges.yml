@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/getnet/integrations
 - https://n8n.io/integrations/getnet/
@@ -7,10 +7,42 @@ source:
 - https://monid.ai/tools/getnet
 checked:
 - https://composio.dev/toolkits/getnet
+- https://data.directory.openbankingbrasil.org.br/participants
 - https://monid.ai/tools/getnet
 - https://n8n.io/integrations/getnet/
 - https://zapier.com/apps/getnet/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Open Finance Brasil
+  partner: null
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://data.directory.openbankingbrasil.org.br/participants
+  contract_reference:
+    register: Open Finance Brasil directory (Banco Central do Brasil)
+    spec_file: null
+    role: participant
+    registered_name: GETNET ADQUIRENCIA E SERVICOS PARA MEIOS DE PAGAMENTO S A
+    register_id: 37069280-dd12-5475-b79e-2e434bb8db4b
+    matched_domain: getnet.com.br
+    api_families:
+    - admin
+    - channels_electronic-channels
+    - channels_phone-channels
+    - consents
+    - customers-business
+    - customers-personal
+    - discovery_outages
+    - discovery_status
+    - loans
+    - opendata-acquiring-services_businesses
+    - opendata-acquiring-services_personals
+    - opendata-loans_business-loans
+    - opendata-loans_personal-loans
+    - resources
+    detected_by: sweep-standard-registers.py
+    detected: '2026-10-14'
 templates: []
